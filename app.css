@@ -1,0 +1,115 @@
+
+.app-title {
+    margin-bottom: var(--space-lg);
+}
+
+.app-title p {
+    margin-top: var(--space-sm);
+    color: var(--color-subtext);
+}
+
+.item-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 80px minmax(0, 1fr) auto;
+    gap: var(--space-sm);
+    align-items: end;
+}
+
+.item-field {
+    display: grid;
+    gap: var(--space-xs);
+}
+
+.item-field label {
+    font-size: var(--font-size-subtext);
+    font-weight: 600;
+}
+
+.item-row > .button {
+    align-self: center;
+    margin-top: var(--space-lg);
+}
+.item-subtotal {
+    text-align: right;
+    font-size: var(--font-size-subtext);
+    color: var(--color-subtext);
+    margin-top: var(--space-xs);
+}
+
+.items-total {
+    text-align: right;
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    font-size: var(--font-size-h4);
+}
+
+.items-total strong {
+    color: var(--color-subtext);
+}
+
+/* Adjustment card */
+.adjustment-row {
+    display: grid;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+}
+
+/* Type toggle */
+.adjustment-type-toggle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm);
+}
+
+.adjustment-type-btn {
+    opacity: 0.55;
+}
+
+.adjustment-type-btn.active {
+    opacity: 1;
+    background: var(--color-primary);
+    color: var(--color-primary-text);
+}
+
+/* Adjustment fields */
+.adjustment-fields {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.adjustment-field {
+    display: grid;
+    gap: var(--space-xs);
+}
+
+.adjustment-field label {
+    font-size: var(--font-size-subtext);
+    font-weight: 600;
+}
+
+/* Amount and currency side by side */
+.adjustment-amount-group {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--space-sm);
+}
+
+.adjustment-amount-group select {
+    min-width: 110px;
+}
+
+.adjustment-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm);
+}
+
+.adjustment-header input {
+    flex: 1;
+    min-width: 0;
+}
