@@ -611,11 +611,11 @@ a {
 }
 
 .layout-50-50 {
-  display: grid;
-  grid-template-columns: 50fr 50fr;
-  column-gap: var(--space-lg);
-  row-gap: var(--space-lg);
-  align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--space-lg);
+    row-gap: var(--space-lg);
+    align-items: start;
 }
 
 .layout-70-30 {
@@ -632,4 +632,12 @@ a {
   column-gap: var(--space-lg);
   row-gap: var(--space-lg);
   align-items: start;
+}
+
+
+
+@media (max-width: 768px) {
+    .layout-50-50 {
+        grid-template-columns: 1fr;
+    }
 }
